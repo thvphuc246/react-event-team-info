@@ -1,8 +1,14 @@
 import TeamItem from "../item/TeamItem";
+import { Member } from "../member/TeamMember";
 import "./TeamList.scss";
 
 export interface Team {
-  [key: string]: string | string[];
+  name: string;
+  description: string;
+  projectDescription: string;
+  hashtags: string[];
+  roles: string[];
+  members: Member[];
 }
 
 interface TeamListProps {

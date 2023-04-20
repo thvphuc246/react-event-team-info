@@ -1,4 +1,6 @@
+import { useState } from "react";
 import { Team } from "../list/TeamList";
+import TeamMember from "../member/TeamMember";
 import TeamRole from "../role/TeamRole";
 import "./TeamItem.scss";
 
@@ -7,8 +9,7 @@ interface TeamItemProps {
 }
 
 const TeamItem: React.FC<TeamItemProps> = ({ team }) => {
-  const hashtags = team.hashtags as string[];
-  const roles = team.roles as string[];
+  const { name, description, projectDescription, hashtags, roles, members } = team;
   const buttonClasses = [
     "w-fit",
     "m-auto",
@@ -30,10 +31,11 @@ const TeamItem: React.FC<TeamItemProps> = ({ team }) => {
     "active:opacity-[0.85]",
     "active:shadow-none",
   ];
+  const [showMore, setshowMore] = useState(false);
 
   return (
     <div className="flex flex-col gap-4 p-5 rounded-lg shadow-lg bg-gray-100">
-      <div className="text-4xl font-bold uppercase">{team.name}</div>
+      <div className="text-4xl font-bold uppercase">{name}</div>
       <div className="flex flex-wrap gap-4">
         {hashtags.map((tag, index) => (
           <div
@@ -44,9 +46,9 @@ const TeamItem: React.FC<TeamItemProps> = ({ team }) => {
           </div>
         ))}
       </div>
-      <div>{team.description}</div>
+      <div>{description}</div>
       <div className="text-xl uppercase">Our project</div>
-      <div className="">{team.projectDescription}</div>
+      <div className="">{projectDescription}</div>
       <div className="text-2xl font-bold">We are looking for</div>
       <div className="flex flex-wrap">
         {roles.map((role, index) => (
@@ -55,9 +57,37 @@ const TeamItem: React.FC<TeamItemProps> = ({ team }) => {
           </div>
         ))}
       </div>
-      <button type="button" className={buttonClasses.join(" ")} data-ripple-light="true">
-        Show More
-      </button>
+
+      {!showMore && (
+        <button
+          type="button"
+          className={buttonClasses.join(" ")}
+          data-ripple-light="true"
+          onClick={() => setshowMore(true)}
+        >
+          Show More
+        </button>
+      )}
+
+      {showMore && (
+        <>
+          <div className="text-2xl font-bold">Our team</div>
+          <div className="flex flex-wrap">
+            {members.map((member, index) => (
+              <div key={`member-${index}`} className="basis-1/3 border-box">
+                <TeamMember member={member} />
+              </div>
+            ))}
+          </div>
+          <div>
+            <div className="text-2xl font-bold">Contact</div>
+            <div>ouremail@email.com</div>
+          </div>
+          <button type="button" className={buttonClasses.join(" ")} data-ripple-light="true">
+            Apply
+          </button>
+        </>
+      )}
     </div>
   );
 };

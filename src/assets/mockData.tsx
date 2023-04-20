@@ -8,6 +8,11 @@ export const mockData = [
     projectDescription: "lorem ipsum 1",
     hashtags: ["ai", "fullstack", "python", "education"],
     roles: ["designer", "full stack developer", "leader"],
+    members: [
+      { name: "John Doe", role: "leader" },
+      { name: "John Wick", role: "front-end developer" },
+      { name: "Jonathan", role: "data engineer" },
+    ],
   },
   {
     name: "Discoverers",
@@ -15,6 +20,11 @@ export const mockData = [
     projectDescription: "lorem ipsum 2",
     hashtags: ["data", "privacy", "logistics"],
     roles: ["copywriter", "back-end developer", "presenter"],
+    members: [
+      { name: "John Doe", role: "leader" },
+      { name: "John Wick", role: "front-end developer" },
+      { name: "Jonathan", role: "data engineer" },
+    ],
   },
   {
     name: "Junctionn",
@@ -22,6 +32,11 @@ export const mockData = [
     projectDescription: "lorem ipsum 3",
     hashtags: ["tourism", "mobile", "cross-platform"],
     roles: ["mobile developer", "front-end developer", "scrum master"],
+    members: [
+      { name: "John Doe", role: "leader" },
+      { name: "John Wick", role: "front-end developer" },
+      { name: "Jonathan", role: "data engineer" },
+    ],
   },
   {
     name: "Unicorn",
@@ -29,6 +44,11 @@ export const mockData = [
     projectDescription: "lorem ipsum 1",
     hashtags: ["ai", "fullstack", "python", "education"],
     roles: ["designer", "full stack developer", "leader"],
+    members: [
+      { name: "John Doe", role: "leader" },
+      { name: "John Wick", role: "front-end developer" },
+      { name: "Jonathan", role: "data engineer" },
+    ],
   },
   {
     name: "Discoverers",
@@ -36,6 +56,11 @@ export const mockData = [
     projectDescription: "lorem ipsum 2",
     hashtags: ["data", "privacy", "logistics"],
     roles: ["copywriter", "back-end developer", "presenter"],
+    members: [
+      { name: "John Doe", role: "leader" },
+      { name: "John Wick", role: "front-end developer" },
+      { name: "Jonathan", role: "data engineer" },
+    ],
   },
   {
     name: "Junctionn",
@@ -43,6 +68,11 @@ export const mockData = [
     projectDescription: "lorem ipsum 3",
     hashtags: ["tourism", "mobile", "cross-platform"],
     roles: ["mobile developer", "front-end developer", "scrum master"],
+    members: [
+      { name: "John Doe", role: "leader" },
+      { name: "John Wick", role: "front-end developer" },
+      { name: "Jonathan", role: "data engineer" },
+    ],
   },
   {
     name: "Unicorn",
@@ -50,6 +80,11 @@ export const mockData = [
     projectDescription: "lorem ipsum 1",
     hashtags: ["ai", "fullstack", "python", "education"],
     roles: ["designer", "full stack developer", "leader"],
+    members: [
+      { name: "John Doe", role: "leader" },
+      { name: "John Wick", role: "front-end developer" },
+      { name: "Jonathan", role: "data engineer" },
+    ],
   },
   {
     name: "Discoverers",
@@ -57,6 +92,11 @@ export const mockData = [
     projectDescription: "lorem ipsum 2",
     hashtags: ["data", "privacy", "logistics"],
     roles: ["copywriter", "back-end developer", "presenter"],
+    members: [
+      { name: "John Doe", role: "leader" },
+      { name: "John Wick", role: "front-end developer" },
+      { name: "Jonathan", role: "data engineer" },
+    ],
   },
   {
     name: "Junctionn",
@@ -64,5 +104,10 @@ export const mockData = [
     projectDescription: "lorem ipsum 3",
     hashtags: ["tourism", "mobile", "cross-platform"],
     roles: ["mobile developer", "front-end developer", "scrum master"],
+    members: [
+      { name: "John Doe", role: "leader" },
+      { name: "John Wick", role: "front-end developer" },
+      { name: "Jonathan", role: "data engineer" },
+    ],
   },
 ];
