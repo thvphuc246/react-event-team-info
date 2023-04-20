@@ -1,12 +1,19 @@
-import { mockData } from "assets/mockData";
 import TeamItem from "../item/TeamItem";
 import "./TeamList.scss";
 
-const TeamList = (): JSX.Element => {
+export interface Team {
+  [key: string]: string | string[];
+}
+
+interface TeamListProps {
+  data: Team[];
+}
+
+const TeamList: React.FC<TeamListProps> = ({ data }) => {
   return (
     <div className="m-8 flex flex-wrap">
-      {mockData.map((item) => (
-        <div className="flex-auto basis-1/2 border-box p-5">
+      {data.map((item, index) => (
+        <div key={`team-item-${index}`} className="flex-none basis-1/2 border-box p-5">
           <TeamItem team={item} />
         </div>
       ))}
