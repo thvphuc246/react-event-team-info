@@ -30,6 +30,8 @@ The following technologies were used in building the application:
 - Tailwind
 - NodeJS
 - Husky
+- Jest
+- React Modal
 
 ## Getting Started
 
