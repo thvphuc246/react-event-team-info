@@ -1,6 +1,7 @@
 # Documentation
 
 The application is a web-based tool that allows users to browse and apply to join teams participating in a challenge. It includes features such as team filtering and member contact information.
+
 The demo of the app can be checked [here](https://junction-assginment.vercel.app/).
 
 ## Features
