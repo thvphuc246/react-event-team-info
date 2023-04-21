@@ -3,6 +3,8 @@ import { Team } from "../list/TeamList";
 import TeamMember from "../member/TeamMember";
 import TeamRole from "../role/TeamRole";
 import "./TeamItem.scss";
+import { buttonClasses } from "utils/classes";
+import ApplyModal from "../action/ApplyModal";
 
 interface TeamItemProps {
   team: Team;
@@ -10,27 +12,6 @@ interface TeamItemProps {
 
 const TeamItem: React.FC<TeamItemProps> = ({ team }) => {
   const { name, description, projectDescription, hashtags, roles, members } = team;
-  const buttonClasses = [
-    "w-fit",
-    "m-auto",
-    "rounded-lg",
-    "bg-blue-500",
-    "py-3",
-    "px-6",
-    "text-l",
-    "font-bold",
-    "uppercase",
-    "text-white",
-    "shadow-md",
-    "shadow-blue-500/20",
-    "transition-all",
-    "hover:shadow-lg",
-    "hover:shadow-blue-500/40",
-    "focus:opacity-[0.85]",
-    "focus:shadow-none",
-    "active:opacity-[0.85]",
-    "active:shadow-none",
-  ];
   const [showMore, setshowMore] = useState(false);
 
   return (
@@ -83,9 +64,10 @@ const TeamItem: React.FC<TeamItemProps> = ({ team }) => {
             <div className="text-2xl font-bold">Contact</div>
             <div>ouremail@email.com</div>
           </div>
-          <button type="button" className={buttonClasses.join(" ")} data-ripple-light="true">
-            Apply
-          </button>
+          <ApplyModal />
+          <div className="italic m-auto cursor-pointer" onClick={() => setshowMore(false)}>
+            Collapse
+          </div>
         </>
       )}
     </div>

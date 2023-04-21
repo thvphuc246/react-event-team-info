@@ -9,9 +9,9 @@ export const mockData = [
     hashtags: ["ai", "fullstack", "python", "education"],
     roles: ["designer", "full stack developer", "leader"],
     members: [
-      { name: "John Doe", role: "leader" },
-      { name: "John Wick", role: "front-end developer" },
-      { name: "Jonathan", role: "data engineer" },
+      { name: "John Doe", role: "Leader" },
+      { name: "John Wick", role: "Front-end Developer" },
+      { name: "Jonathan", role: "Data Engineer" },
     ],
   },
   {
@@ -21,9 +21,9 @@ export const mockData = [
     hashtags: ["data", "privacy", "logistics"],
     roles: ["copywriter", "back-end developer", "presenter"],
     members: [
-      { name: "John Doe", role: "leader" },
-      { name: "John Wick", role: "front-end developer" },
-      { name: "Jonathan", role: "data engineer" },
+      { name: "John Doe", role: "Leader" },
+      { name: "John Wick", role: "Front-end Developer" },
+      { name: "Jonathan", role: "Data Engineer" },
     ],
   },
   {
@@ -33,9 +33,9 @@ export const mockData = [
     hashtags: ["tourism", "mobile", "cross-platform"],
     roles: ["mobile developer", "front-end developer", "scrum master"],
     members: [
-      { name: "John Doe", role: "leader" },
-      { name: "John Wick", role: "front-end developer" },
-      { name: "Jonathan", role: "data engineer" },
+      { name: "John Doe", role: "Leader" },
+      { name: "John Wick", role: "Front-end Developer" },
+      { name: "Jonathan", role: "Data Engineer" },
     ],
   },
   {
@@ -45,9 +45,9 @@ export const mockData = [
     hashtags: ["ai", "fullstack", "python", "education"],
     roles: ["designer", "full stack developer", "leader"],
     members: [
-      { name: "John Doe", role: "leader" },
-      { name: "John Wick", role: "front-end developer" },
-      { name: "Jonathan", role: "data engineer" },
+      { name: "John Doe", role: "Leader" },
+      { name: "John Wick", role: "Front-end Developer" },
+      { name: "Jonathan", role: "Data Engineer" },
     ],
   },
   {
