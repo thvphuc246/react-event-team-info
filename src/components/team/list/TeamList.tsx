@@ -19,7 +19,10 @@ const TeamList: React.FC<TeamListProps> = ({ data }) => {
   return (
     <div className="m-8 flex flex-wrap">
       {data.map((item, index) => (
-        <div key={`team-item-${index}`} className="flex-none basis-1/2 border-box p-5">
+        <div
+          key={`team-item-${index}`}
+          className="team-item-card flex-none basis-1/2 border-box p-5"
+        >
           <TeamItem team={item} />
         </div>
       ))}
